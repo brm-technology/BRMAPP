@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfe=self.webpackChunkfe||[]).push([[875],{7875:(e,a,s)=>{e.exports=s.p+"static/media/Circularbeam.22a6183dd34ab8ec89ed.png"}}]);

@@ -1,0 +1,29 @@
+/* App.css */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #05021f 0%, #036172 100%);
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;        /* Responsive width */
+  height: 85vh;
+}
+
+.content-box {
+  background-color: white;
+  width: 90vw;        /* Responsive width */
+  height: 85vh;      /* Height for the content box */
+  padding: 20px;     /* Padding for inner content */
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  overflow: auto;    /* Allow scrolling when content overflows */
+}

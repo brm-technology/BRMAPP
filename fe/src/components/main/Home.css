@@ -1,0 +1,37 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .home-box {
+    background-color: #ddeeed;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  
+  .home-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  .home-description {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 0.9rem;
+    color: #000000;
+  }
+  
+  .home-signature {
+    text-align: right;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #000000;
+  }
+  

@@ -1,0 +1,55 @@
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+
+.beam-selector,
+.dimension-inputs,
+.results {
+  margin: 15px 0;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+input {
+  padding: 5px;
+  width: calc(100% - 20px);
+  max-width: 200px;
+  text-align: center;
+}
+
+button {
+  display: block; 
+  margin: 10px auto;
+  margin-top: 20px;
+  padding: 8px 15px;
+  background-color: #294fcc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.results {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.beam-image {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}

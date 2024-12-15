@@ -1,0 +1,76 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile layout */
+    grid-template-rows: repeat(3, auto); /* Three rows, auto height for flexibility */
+    gap: 20px; /* Maintain consistent spacing between rows */
+    padding: 20px;
+    height: auto; /* Adjust container height for a mobile-friendly layout */
+  }
+  
+  .grid-box {
+    background-color: #F6F0E6;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    height: auto; /* Adjust height to accommodate content */
+    overflow: auto;
+    font-size: 0.8rem;
+  }
+  
+  /* Adjust filters to display in a column */
+  .grid-box:nth-child(1),
+  .grid-box:nth-child(2) {
+    display: flex;
+    flex-direction: column; /* Stack dropdowns vertically */
+    gap: 10px; /* Add spacing between filters */
+    justify-content: flex-start;
+    align-items: stretch; /* Ensure dropdowns stretch to full width */
+  }
+  
+  /* Dropdown styling */
+  /* Ensure dropdown options wrap text and stay within the dropdown width */
+.grid-box select {
+  width: 100%; /* Ensure the dropdown fits the container width */
+  white-space: normal; /* Allow wrapping of text inside the dropdown */
+  overflow-wrap: break-word; /* Break long words to fit */
+  word-wrap: break-word; /* Ensure compatibility with older browsers */
+  font-size: 0.9rem; /* Slightly larger font size for readability */
+  height: auto; /* Adjust height to fit content */
+}
+
+.grid-box option {
+  white-space: normal; /* Allow text wrapping inside dropdown items */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  display: block; /* Ensure proper block layout for multi-line text */
+  padding: 5px; /* Add padding for better readability */
+  max-width: 100%; /* Ensure the option text does not exceed the dropdown width */
+  text-overflow: ellipsis; /* Add ellipsis for long lines that exceed container width */
+  line-height: 1.2; /* Adjust line spacing for better readability */
+}
+
+  
+  /* Dropdown menu container adjustments */
+  .grid-box select::-webkit-scrollbar {
+    width: 8px; /* Customize scrollbar width */
+  }
+  
+  .grid-box select::-webkit-scrollbar-thumb {
+    background-color: #999; /* Customize scrollbar color */
+    border-radius: 4px;
+  }
+  
+  .default-message {
+    margin-top: 20px;
+    color: #000000;
+    font-style: italic;
+  }
+  
+  /* Additional adjustments for grid-box alignment */
+  .grid-box:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  

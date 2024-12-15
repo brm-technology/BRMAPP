@@ -1,0 +1,54 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%; /* Two equal columns for the first row */
+  grid-template-rows: 86% 14%; /* First row is 70%, second row is 30% */
+  gap: 20px;
+  padding: 20px;
+  height: 68vh; /* Set the grid container height to fill the viewport */
+}
+
+.grid-box {
+  background-color: #f0ede7;
+  padding: 20px; /* Adjusted padding for better spacing */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  overflow: auto; /* Enable scrolling if content exceeds box height */
+  font-size: 0.8rem;
+}
+
+.grid-box:nth-child(1),
+.grid-box:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Make sure the third box spans the entire width of the grid */
+.grid-box:nth-child(3) {
+  grid-column: 1 / span 2; /* Make the third box span both columns */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.default-message {
+  margin-top: 20px;
+  color: #000000;
+  font-style: italic;
+}
+
+/* Media query to switch to 3 rows and 1 column when box width becomes less than 1000px */
+@media (max-width: 1000px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Switch to 1 column */
+    grid-template-rows: repeat(3, auto); /* Three rows, each taking equal space */
+    height: auto; /* Adjust height for single-column layout */
+  }
+
+  .grid-box {
+    height: auto; /* Adjust height for the new single-column layout */
+  }
+}

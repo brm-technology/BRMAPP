@@ -1,0 +1,90 @@
+.timeline-container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #bfdba8;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  .timeline-item {
+    padding: 20px;
+    position: relative;
+    width: 50%;
+  }
+  
+  .timeline-item.left {
+    left: 0;
+    text-align: right; /* Align content to the left */
+  }
+  
+  .timeline-item.right {
+    left: 50%;
+    text-align: left; /* Align content to the right */
+  }
+  
+  .timeline-item .content {
+    padding: 20px;
+    background-color: #F6F0E6;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .timeline-item.left .content {
+    margin-right: 45px;
+  }
+  
+  .timeline-item.right .content {
+    margin-left: 45px;
+  }
+  
+  .timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #ff7b00;
+    border: 4px solid #ff7b00;
+    top: 0px;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .timeline-item.left::after {
+    left: calc(100% - 12.5px); /* Adjust the circle position on the left side */
+  }
+  
+  .timeline-item.right::after {
+    right: calc(100% - 12.5px); /* Adjust the circle position on the right side */
+  }
+  
+  .timeline-item .content h6 {
+    margin-top: 0;
+    color: #8f0707;
+    font-size: 1rem;
+  }
+  
+  .timeline-item .content h4 {
+    margin: 10px 0;
+    color: #000000;
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+  
+  .timeline-item .content p {
+    margin-bottom: 0;
+    color: #000000;
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+  

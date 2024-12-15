@@ -1,0 +1,54 @@
+.contact-form-container {
+  width: 70%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ddeeed;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form-group-custom {
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+.form-group-custom label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group-custom .form-control {
+  width: 100%; /* Ensures full width */
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* Includes padding in the width calculation */
+}
+
+.submit-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.submit-button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* Optional: For better responsiveness */
+@media (max-width: 768px) {
+  .contact-form-container {
+      width: 90%;
+  }
+}

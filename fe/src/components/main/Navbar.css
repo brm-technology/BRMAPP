@@ -1,0 +1,80 @@
+.custom-navbar {
+    background-color: #011C3A; /* Dark blue with transparency */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center; /* Center the logo and text vertically */
+    font-weight: bold; /* Make the brand logo text bold */
+    color: rgb(255, 255, 255); /* Set the logo text color to white */
+    margin-right: 50px; /* Space between logo and brand text */
+}
+
+.custom-navbar .navbar-brand {
+    color: white !important; /* Force the color to white */
+}
+
+.custom-navbar .navbar-brand:hover {
+    color: orange !important; /* Change to orange on hover */
+}
+
+.logo {
+    height: 40px; /* Adjust height of the logo */
+    margin-right: 10px; /* Space between logo and brand text */
+}
+
+.nav-link {
+    color: white !important; /* Ensure the link color is white */
+}
+
+.navbar-toggler {
+    border-color: white; /* Change the border color of the hamburger icon to white */
+    color: white !important; /* Ensure the link color is white */
+}
+
+.navbar-toggler {
+    border: none; /* Remove any border from the toggle button */
+}
+
+.navbar-toggler-icon {
+    background-color: transparent; /* Ensure the background is transparent */
+    background-image: none; /* Remove the default Bootstrap icon */
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.navbar-toggler-icon::before, 
+.navbar-toggler-icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Thickness of the lines */
+    background-color: white; /* Set the line color to white */
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon::before {
+    top: 7px; /* Position the top line */
+}
+
+.navbar-toggler-icon::after {
+    bottom: 7px; /* Position the bottom line */
+}
+
+.navbar-toggler-icon div {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Thickness of the middle line */
+    background-color: white; /* Set middle line to white */
+    transform: translateY(-50%); /* Center the middle line */
+}
+
+
+.nav-link:hover {
+    color: #f1e208 !important; /* Optional: Change color on hover */
+}
